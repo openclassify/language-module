@@ -1,0 +1,12 @@
+{% extends "theme::layouts/default" %}
+{% block content %}
+    <form method="post">
+        <input type="hidden" name="module" value="{{ module }}">
+        <input type="hidden" name="language" value="{{ language }}">
+        <input type="hidden" name="file" value="{{ file }}">
+        <button type="submit" class="btn btn-success">Save</button>
+        <label for=""></label>
+        <textarea  class=" mt-2 mb-2 form-control" name="file_content" id="" cols="30" rows="100%">{{ content }}</textarea>
+        <button type="submit" class="btn btn-success mb-2">Save</button>
+    </form>
+{% endblock %}
